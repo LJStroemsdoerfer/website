@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>till.io</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../main.html">till.io</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../main.html">Home</a></li>
+								<li><a href="py_package.html">Python API</a></li>
+								<li><a href="r_package.html">R API</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>R API</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<section>
+										<h3 class="major">Overview</h3>
+										<p>The <code>till</code> package allows you to create Docker images automatically from your plumber API. You will only need to provide your API file and any directory you need and <code>till</code> will create the images, build and test them, and ship the image to any remote registry you want.</p>
+										<h3 class="major">Usage</h3>
+										<h4>Installation</h4>
+										<p>The <code>till</code> package is hosted on CRAN, however, can only be accessed with a secret key. At subscription start, you will receive this key from us.</p>
+										<pre><code>install.packages("till", auth = "your_key")</code></pre>
+										<h4>Code Example</h4>
+										<pre><code># load library
+library(till)
+library(dplyr)
+
+# create the docker image
+my_container <- till::create(api = "your_api_file.R",
+			     dependencies = "your_dir/",
+			     port = "5000")
+
+# run docker container
+my_container %>%
+	till::run()
+
+# push container
+my_container %>%
+	till::push(registry = "my-regisry:443/my_project",
+	           auth = list("password", "user"))
+</code></pre>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<ul class="contact">
+							<li class="icon solid fa-home">
+								till.io GbR<br />
+								Lukas Jan Stroemsdoerfer <br />
+								Maria Perednya <br />
+								Haußmannstraße 124<br />
+								70188 Stuttgart
+							</li>
+							<li class="icon solid fa-phone">(+49) 176 23658775</li>
+							<li class="icon solid fa-envelope"><a href="mailto:info@tillio.com">info@tillio.com</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; till.io GbR</li><li><a href="impressum.html">Impressum</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
