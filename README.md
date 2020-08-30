@@ -1,4 +1,4 @@
-# till.io Website
+# till.io website
 
 This repository contains all the code for our till.io website. The website is hosted via GitHub. The design is inspired by <a href="https://html5up.net/solid-state">Solid State</a> by <code>@ajlkn</code>.
 
