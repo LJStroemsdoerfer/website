@@ -18,6 +18,6 @@ We use GitHub Pages to host the website. As the website is static and quite simp
 
 ## Contact
 
-The website can be reached via <code>https://xx.io</code>For any question or inqueries regarding the website, please contact <a href="mailto:info@tillio.com">Lukas</a>.
+The website can be reached via <code>https://xx.io</code>. For any question or inqueries regarding the website, please contact <a href="mailto:info@tillio.com">Lukas</a>.
 
 
