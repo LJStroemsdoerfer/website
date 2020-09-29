@@ -7,13 +7,13 @@ This repository contains all the code for our till.io website. The website is ho
 The website is fully responsive and <code>HTML</code>, <code>CSS</code> and <code>JS</code> based. All images where created by us using <a href="https://www.sketch.com">Sketch</a>. 
 
 <p align="center">
-  <img src="docs/images/main_image.png" width="600">
+  <img src="images/main_image.png" width="600">
 </p>
 
 We use GitHub Pages to host the website. As the website is static and quite simplistic, we don't need a more advanced hosting mechanism. The following specs define the source files for the website.
 
 <p align="center">
-  <img src="docs/images/gh-pages.png" width="600">
+  <img src="images/gh-pages.png" width="600">
 </p>
 
 ## Contact
