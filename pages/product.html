@@ -79,48 +79,29 @@
 										At the core of our engine, we make use of REST to build APIs and Docker for containerization.
 									</p>
 								</section>
-								<section>
-									<h3>Python API</h3>
-										<p>
-											<span class="image left"><img src="../images/python_code.png" alt="" /></span>
-											Our Python API enables a stunningly fast construction of Docker containers. With a full 
-											integration into the <code>Flask</code> API framework, Pythonists can construct, build, 
-											run and deploy containers without leaving Python. <br>
-											<br>
-											Data Scientists can build their API in Flask and <code>till</code> will take care of 
-											catching the necessary libraries and file resources.<br>
-											<br>
-											In addition to the <code>build()</code> and <code>run()</code> methods, you have a 
-											<code>deploy()</code> method, which allows you to ship your API to any remote registry.<br>
-											<br>
-											<code>till</code> is available on PyPi. So you can download the library as every other
-											Python library, using: <code> pip install till</code><br>
-											<br>
-											<a href="https://till-io.github.io/documentation/python/python-main/" class="special">Learn more</a>
-										</p>
-									<h3>R API</h3>
-									<p>
-										<span class="image right"><img src="../images/r_code.png" alt="" /></span>
-										Our R API allows you to construct Docker containers directly from RStudio. There is no 
-										need to take any detours or extra effort. Our package integrates perfectly withe the most
-										promiment R API framework <code>plumbeR</code>. R Data Scientists can simply build their
-										<code>plumbeR</code> API as they are used.<br>
-										<br>
-										<code>till</code> takes care of all the heavy lifting. It checks all necessary package
-										dependencies, as well as file resources that are needed to run the API.<br>
-										<br>
-										We comply with the standard R interface, instead of running <code>plumbeR</code> run
-										commands, you can use the <code>till</code> functions to get your API containerized.<br>
-										<br>
-										Similar to the Python API you can not only build and run containers, but also deploy them
-										to any remote location and all of this can be done, from your favorite R IDE.<br>
-										<br>
-										To install <code>till</code> you can simply use your standard CRAN mirror and run the typical
-										installation command: <code>install.packages('till')</code>. <br>
-										<br>
-										<a href="https://till-io.github.io/documentation/R/r-main/" class="special">Learn more</a>
-									</p>
-								</section>
+                                <h2 class="major">Our APIs</h2>
+                                <section class="features">
+                                        <article>
+                                            <a class="image"><img src="../images/py_api.png" alt="" /></a>
+                                            <h3 class="major">Python API</h3>
+                                            <p>
+												We provide a standard Python interface, which you can download from PyPi. Our API allows you to interact with <code>till-core</code> via your favorite Python IDE.<br>
+												<br>
+												<br>
+												<a href="https://till-io.github.io/documentation/python/python-main/" class="special">Learn more</a>
+											</p>
+                                        </article>
+                                        <article>
+                                            <a class="image"><img src="../images/r_api.png" alt="" /></a>
+                                            <h3 class="major">R API</h3>
+                                            <p>
+												We provide a standard R interface, which you can download from CRAN. Our API allows you to interact with <code>till-core</code> via your favorite R IDE.<br>
+												<br>
+												<br>
+												<a href="https://till-io.github.io/documentation/R/r-main/" class="special">Learn more</a>
+											</p>
+                                        </article>
+                                </section>
                             </div>
 
                         </div>
